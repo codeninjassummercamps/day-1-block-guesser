@@ -80,6 +80,7 @@ blocks.onBlockPlaced(GRASS, function () {
     blocks.place(GREEN_GLAZED_TERRACOTTA, world(20, 4, 0))
 })
 ```
+
 ## Activity Complete!
 
 You did it! You learned about several different events and how we can run code when those events occur!
