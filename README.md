@@ -71,7 +71,7 @@ player.onChat("run", function () {
 })
 ```
 
-## Station 4
+## Station 6
 
 Can you find the ``||blocks.on block placed||`` event? What block is going to be placed?
 
