@@ -1,33 +1,82 @@
- 
+# Day 1 Events Challenge
 
+```template
+blocks.place(LIGHT_GRAY_GLAZED_TERRACOTTA, world(0, 4, 0))
+blocks.onBlockPlaced(GRASS, function () {
+    blocks.place(GREEN_GLAZED_TERRACOTTA, world(20, 4, 0))
+})
+blocks.onBlockBroken(LOG_OAK, function () {
+    blocks.place(BLUE_GLAZED_TERRACOTTA, world(12, 4, 0))
+})
+player.onItemInteracted(DIAMOND_SWORD, function () {
+    blocks.place(ORANGE_GLAZED_TERRACOTTA, world(4, 4, 0))
+})
+player.onChat("run", function () {
+    blocks.place(YELLOW_GLAZED_TERRACOTTA, world(16, 4, 0))
+})
+player.onTravelled(RIDING, function () {
+    blocks.place(RED_GLAZED_TERRACOTTA, world(8, 4, 0))
+})
+```
 
-> Open this page at [https://codeninjassummercamps.github.io/day-1-event-challenge/](https://codeninjassummercamps.github.io/day-1-event-challenge/)
+## Events Challenge
 
-## Use as Extension
+In this activity, you will learn about events by trying to guess what block will be placed when certain events happen in the world.
 
-This repository can be added as an **extension** in MakeCode.
+## Station 1
 
-* open [https://arcade.makecode.com/](https://arcade.makecode.com/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/codeninjassummercamps/day-1-event-challenge** and import
+The ``||loops.on start||`` event has a ``||blocks.place block at||`` block inside! What block do you think will be placed when the code starts? Press the Green Play arrow to find out!
 
-## Edit this project ![Build status badge](https://github.com/codeninjassummercamps/day-1-event-challenge/workflows/MakeCode/badge.svg)
+```blocks
+blocks.place(LIGHT_GRAY_GLAZED_TERRACOTTA, world(0, 4, 0))
+```
 
-To edit this repository in MakeCode.
+## Station 2
 
-* open [https://arcade.makecode.com/](https://arcade.makecode.com/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/codeninjassummercamps/day-1-event-challenge** and click import
+Can you find the ``||player.on item used||`` event? What block is going to be placed?
 
-## Blocks preview
+```blocks
+player.onItemInteracted(DIAMOND_SWORD, function () {
+    blocks.place(ORANGE_GLAZED_TERRACOTTA, world(4, 4, 0))
+})
+```
 
-This image shows the blocks code from the last commit in master.
-This image may take a few minutes to refresh.
+## Station 3
 
-![A rendered view of the blocks](https://github.com/codeninjassummercamps/day-1-event-challenge/raw/master/.github/makecode/blocks.png)
+Can you find the ``||player.on player riding||`` event? What block is going to be placed?
 
-#### Metadata (used for search, rendering)
+```blocks
+player.onTravelled(RIDING, function () {
+    blocks.place(RED_GLAZED_TERRACOTTA, world(8, 4, 0))
+})
+```
 
-* for PXT/arcade
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+## Station 4
+
+Can you find the ``||blocks.on block broken||`` event? What block is going to be placed?
+
+```blocks
+blocks.onBlockBroken(LOG_OAK, function () {
+    blocks.place(BLUE_GLAZED_TERRACOTTA, world(12, 4, 0))
+})
+```
+
+## Station 5
+
+Can you find the ``||player.on chat command||`` event? What block is going to be placed?
+
+```blocks
+player.onChat("run", function () {
+    blocks.place(YELLOW_GLAZED_TERRACOTTA, world(16, 4, 0))
+})
+```
+
+## Station 4
+
+Can you find the ``||blocks.on block placed||`` event? What block is going to be placed?
+
+```blocks
+blocks.onBlockPlaced(GRASS, function () {
+    blocks.place(GREEN_GLAZED_TERRACOTTA, world(20, 4, 0))
+})
+```
