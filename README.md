@@ -1,4 +1,4 @@
-# Day 1 Events Challenge
+# Day 1 Block Guesser
 
 ```template
 blocks.place(LIGHT_GRAY_GLAZED_TERRACOTTA, world(0, 4, 0))
@@ -19,7 +19,7 @@ player.onTravelled(RIDING, function () {
 })
 ```
 
-## Events Challenge
+## Block Guesser
 
 In this activity, you will learn about events by trying to guess what block will be placed when certain events happen in the world.
 
